@@ -3,6 +3,47 @@ body {
     grid: 100px auto / 1fr 4fr;
 }
 
+.header {
+    padding: 0px 50px;
+    font-size: 1.5rem;
+}
+
+.header-row-1, .header-row-2 {
+    display: flex;
+    gap: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    margin-right: 5%;
+    flex: 1;
+    gap: 2%;
+    align-items: center;
+}
+
+form img {
+
+}
+
+form label {
+    display: flex;
+    align-items: center;
+}
+
+form input {
+    flex: 1;
+}
+
+.header-icon {
+    height: 25px;
+}
+
+.header-row-1 .user-icon {
+    height: 60px;
+}
+
 .navigation-column {
     background-color: steelblue;
     color: white;
