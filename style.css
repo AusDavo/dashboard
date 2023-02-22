@@ -11,6 +11,8 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     gap: 50px;
+    box-shadow: 10px 0 10px rgba(0,0,0,0.5);
+    z-index: 2;
 }
 
 .navigation-column-header {
@@ -51,6 +53,11 @@ h1 {
     height: 4rem;
     filter: invert(1);
     vertical-align: middle;
+}
+
+.header {
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+    z-index: 1;
 }
 
 .cards-container {
