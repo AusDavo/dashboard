@@ -144,17 +144,28 @@ h1 {
 }
 
 .cards-container {
-    background-color: lightgrey;
+    background-color: ivory;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     column-gap: 20px;
+    padding: 0px 50px;
+}
 
+.cards-container > div {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: max-content;
+}
+
+.cards-container h2 {
+    margin-bottom: 0;
 }
 
 .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 50px;
+    grid-row: 1 / -1;
     gap: 20px;
 }
 
@@ -162,13 +173,25 @@ h1 {
     grid-column: 1 / -1;
 }
 
-.project-card {
+.card {
     background-color: white;
-    border-left: 10px solid gold;
-    padding: 50px;
+    padding: 20px;
     border-radius: 20px;
-    
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
 }
+
+.card p {
+    color: darkslategray;
+}
+
+.card .user-icon {
+    height: 80px;
+}
+
+.projects .card {
+    border-left: 10px solid gold;
+}
+
 ul {
     list-style: none;
     text-align: center;
@@ -181,4 +204,36 @@ li img {
     height: 1em;
     filter: invert(1);
     vertical-align: middle;
+}
+.announcement-description {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    line-height: 1.2;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.trending .card {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+
+#trending-username {
+    color: black;
+}
+
+#trending-username span {
+    font-weight: 500;
+    color: darkslategray;
 }
