@@ -1,3 +1,7 @@
+/* * {
+    border: 1px solid orange;    
+} */
+
 body {
     display: grid;
     grid: auto auto / 1fr 4fr;
@@ -104,6 +108,7 @@ a {
     row-gap: 20px;
     align-items: center;
     padding-top: 20px;
+    padding-right: 20px;
 }
 
 h1 {
@@ -173,6 +178,10 @@ h1 {
     grid-column: 1 / -1;
 }
 
+.action-icon {
+    height: 25px;
+}
+
 .card {
     background-color: white;
     padding: 20px;
@@ -180,12 +189,39 @@ h1 {
     box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
 }
 
+.projects .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+  }
+
+  .card h3, .card p {
+    margin: 0.2em 0;
+  }
+  
+  .project-description {
+    flex-grow: 1;
+    margin-bottom: 20px;
+  }
+  
+  .action-icons {
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    padding: 0 10px 10px 0;
+  }
+
 .card p {
     color: darkslategray;
 }
 
 .card .user-icon {
     height: 80px;
+    justify-self: end;
 }
 
 .projects .card {
